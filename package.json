@@ -1,0 +1,23 @@
+{
+  "name": "YokoyamaSeminar",
+  "version": "1.0.0",
+  "description": "<center># A bald cs student in YokoyamaSeminar</center>\r ## Markdown test\r ### 3th title\r #### 4th title\r ##### 5th title",
+  "main": "1_helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lexus-D/YokoyamaSeminar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lexus-D/YokoyamaSeminar/issues"
+  },
+  "homepage": "https://github.com/Lexus-D/YokoyamaSeminar#readme",
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}
