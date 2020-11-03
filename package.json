@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Lexus-D/YokoyamaSeminar#readme",
   "dependencies": {
-    "md5": "^2.3.0"
+    "md5": "^2.3.0",
+    "silly-datetime": "^0.1.2"
   }
 }
