@@ -68,5 +68,5 @@ fs.rename('./html','./css/renamed.html',(err)=>{
 
 //9.fs.unlink(path,callback):delete file
 
-//10.mkdirp():创建层级文件夹，需要安装package
+//10.mkdirp():创建层级目录，需要安装package
 mkdirp('./a/b/c/d/e');
