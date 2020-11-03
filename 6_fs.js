@@ -1,4 +1,5 @@
 const fs=require('fs');
+const mkdirp = require('mkdirp');
 
 //1.fs.stat(path,callback): detect whether is a file or a directory
 fs.stat('./html',(err,data)=>{
@@ -66,3 +67,6 @@ fs.rename('./html','./css/renamed.html',(err)=>{
 //8.fs.rmdir(path, callback):delete directory (文件夹内有文件时无法删除)
 
 //9.fs.unlink(path,callback):delete file
+
+//10.mkdirp():创建层级文件夹，需要安装package
+mkdirp('./a/b/c/d/e');
