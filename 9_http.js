@@ -1,7 +1,7 @@
 const http = require('http');
 const fs=require('fs');
 const path = require('path');
-
+const url=require('url')
 const common=require('./9_http module');
 
 http.createServer(function (request, response) {
@@ -10,7 +10,7 @@ http.createServer(function (request, response) {
     
     //1.get address
     console.log(request.url);
-    let pathname=request.url;
+    let pathname=url.parse(request.url).pathname;//防止多余字符
     pathname=pathname=='/'?'/index.html':pathname;//pathname是否为‘/’？不是的话直接让他等于index
     //get extra name
     let extname=path.extname(pathname);
