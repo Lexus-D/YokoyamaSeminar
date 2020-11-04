@@ -353,7 +353,6 @@
     ".stk":"application/hyperstudio" ,
     ".stl":"application/vnd.ms-pkistl" ,
     ".stm":"text/html" ,
-    ".svg":"image/svg+xml" ,
     ".sv4cpio":"application/x-sv4cpio" ,
     ".sv4crc":"application/x-sv4crc" ,
     ".svf":"image/vnd" ,
