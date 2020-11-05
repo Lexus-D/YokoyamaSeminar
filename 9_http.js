@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
     
     //1.get address
     console.log(request.url);
-    let pathname=url.parse(request.url).pathname;//防止多余字符
+    let pathname=url.parse(request.url).pathname;//pick up necessary characters
     pathname=pathname=='/'?'/index.html':pathname;//pathname是否为‘/’？不是的话直接让他等于index
    
     //get extra name
