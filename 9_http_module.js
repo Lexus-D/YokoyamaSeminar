@@ -25,7 +25,7 @@ exports.getFileMime=function(extname){
                 return console.log(err);             
             }
             let mime =JSON.parse(data.toString());
-            console.log(mime[extname]);
+            //console.log(mime[extname]);
             resolve(mime[extname]);
         })
     })
