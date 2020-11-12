@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Lexus-D/YokoyamaSeminar#readme",
   "dependencies": {
+    "experss": "^0.0.1-security",
     "express": "^4.17.1",
     "md5": "*2.3.0",
     "mkdirp": "^1.0.4",

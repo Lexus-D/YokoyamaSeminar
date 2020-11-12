@@ -1,16 +1,9 @@
-const express = require('express');
-const app =express();
-
-app.get('/',(req,res)=>{
-    res.send('hello');
+const express = require('express')
+const path = require('path')
+const app = express()
+//使用静态资源访问,public为根目录
+app.use(express.static(path.join(__dirname, 'experss01')))
+ 
+app.listen(8080, () => {
+  console.log(`App listening at port 8080`)
 })
-app.get('/login',(req,res)=>{
-    res.send('account');
-})
-app.get('/welcome',(req,res)=>{
-    res.send('welcome');
-})
-app.post('/dologin',(req,res)=>{
-    res.send('login');
-})
-app.listen(3000)
