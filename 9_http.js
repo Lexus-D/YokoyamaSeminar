@@ -10,7 +10,6 @@ http.createServer(function (request, response) {
     //http://127.0.0.1:3000/foun_6_Miller/index.html
     
     //1.get address
-    //console.log(request.url);
     let pathname=url.parse(request.url).pathname;//pick up necessary characters
     pathname=pathname=='/'?'/index.html':pathname;//pathname是否为‘/’？不是的话直接让他等于index
    
