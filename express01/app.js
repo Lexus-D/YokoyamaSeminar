@@ -2,11 +2,19 @@
 const app = express()
 const port = 3000
 
-// app.get('/', (req, res) => res.send('Hello World!'))
+app.use((req,res,next)=>{
+    console.log(new Date());
+    next();
+})
 app.get('/hello', (req, res) => res.send('Hello moderfcker~get'))
-app.post('/good', (req, res) => res.send('Hello moderfcker~get'))
-app.put('/why', (req, res) => res.send('???'))
-app.delete('/delete', (req, res) => res.send('========='))
+app.get('/login', (req, res) => res.send('login page'))
+app.get('/loginover', (req, res) => res.send('login completed'))
+app.get('/news' ,(req, res) => res.send('news page'))
+//app.post('/good', (req, res) => res.send('Hello moderfcker~get'))
+//app.put('/why', (req, res) => res.send('???'))
+//app.delete('/delete', (req, res) => res.send('========='))
+
+
 
 //dynamic route
 app.get('/good/:id', (req, res) =>{
